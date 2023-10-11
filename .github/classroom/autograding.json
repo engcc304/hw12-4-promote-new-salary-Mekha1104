@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Set 1",
+      "setup": "g++ -o a.out ./Homework/HW12/hw12-4-promote-new-salary.cpp",
+      "run": "./a.out",
+      "input": "Atom\r\n2500\r\nAom\r\n3230\r\nAim\r\n4560\r\nJom\r\n5505\r\nOn\r\n950\r\nOom\r\n3500\r\nKy\r\n2600\r\n-1\r\n",
+      "output": "**** Salary Result ****\r\nx1.0 count 1\r\nx1.2 count 0\r\nx1.4 count 2\r\nx1.6 count 2\r\nx1.8 count 1\r\nx2.0 count 1\r\nThe Employee get x2.0 is Jom\r\nThe Employee get x1.0 is On",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Set 2",
+      "setup": "g++ -o a.out ./Homework/HW12/hw12-4-promote-new-salary.cpp",
+      "run": "./a.out",
+      "input": "Aey\r\n9956\r\nJ\r\n4900\r\nA\r\n4560\r\nOrio\r\n200\r\nVistra\r\n1656\r\nOh\r\n2300\r\n-1\r\n",
+      "output": "**** Salary Result ****\r\nx1.0 count 1\r\nx1.2 count 1\r\nx1.4 count 1\r\nx1.6 count 0\r\nx1.8 count 2\r\nx2.0 count 1\r\nThe Employee get x2.0 is Aey\r\nThe Employee get x1.0 is Orio",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
